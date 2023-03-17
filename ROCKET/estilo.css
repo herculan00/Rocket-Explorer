@@ -1,0 +1,11 @@
+body{
+  text-align: center;
+}  
+#hero{
+   width: 589px;
+   margin: auto; 
+}
+p{
+   color: black; 
+   line-height: 25px;
+}
