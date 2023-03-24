@@ -38,8 +38,18 @@ span,a{
    margin: 0px auto 8px;
 }
 
+#footer{
+   margin-bottom: 33px;
+}
+
 #footer a + a{
    margin-left: 28px; 
+}
+
+#balls{
+   position: fixed;
+   bottom: 0px;
+   right: 0px;
 }
 
 
