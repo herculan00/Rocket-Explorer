@@ -6,3 +6,26 @@ body{
     width: 1000px;
     margin: 65px auto 0px;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 58px;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+}
+
+main h1{
+    font-size: 49px;
+    line-height: 56px;
+}
