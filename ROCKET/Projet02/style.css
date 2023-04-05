@@ -22,6 +22,9 @@ nav ul a{
     color: #7D7987;
     text-decoration: none;
 }
+nav ul a:hover{
+    font-weight: bold;
+}
 
 nav ul{
     list-style-type: none;
@@ -46,16 +49,19 @@ main h1{
     font-size: 49px;
     line-height: 56px;
     font-family: 'Mulish', sans-serif;
+    font-weight: normal;
 
     margin-bottom: 40px;
 }
 
 main span{
     color: #89C5CC;
+    font-weight: bolder;
 }
 
 main p{
-
+    font-size: 14px;
+    line-height: 28px;
     color: #7D7987;
     margin-bottom: 40px;
 }
@@ -63,12 +69,14 @@ main p{
 main button{
     font-size: 16px;
     font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
 
     background-color: #69B99D;
     color: #F9F9F9;
 
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     width: 179px;
     height: 56px;
@@ -81,6 +89,10 @@ footer{
     line-height: 28px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+}
+
+footer a{
+    font-weight: bold;
 }
 
  #img{
