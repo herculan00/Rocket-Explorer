@@ -1,11 +1,15 @@
 body{
     margin: 0px;
-    
+        
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    min-height: 100vh;
 }
 .page{
     border: 1px solid red;
     width: 1000px;
-    margin: 65px auto 0px;
+    margin: 0px auto;
+    padding-top: 65px;
 
 }
 
@@ -74,17 +78,22 @@ main button{
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
 
+    border: none;
+    border-radius: 4px;
     background-color: #69B99D;
     color: #F9F9F9;
+    padding: 14px 32px 15px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 179px;
-    height: 56px;
    
-    
+    cursor: pointer;
+}
+
+main button:hover{
+    background-color: #4d8874;
 }
 
 footer{
@@ -92,6 +101,7 @@ footer{
     line-height: 28px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+
 }
 
 footer a{
@@ -101,4 +111,5 @@ footer a{
  #img{
     position: fixed;
     right: 0px;
+    bottom: 0px;
 }
