@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
 body::before {
     content: "";
     width: 100%;
@@ -19,6 +25,10 @@ body {
     
 }
 
+body,input,button,select,textarea{
+    font-family: 'Poppins', sans-serif;
+}
+
 .page{
     width: 736px;
     margin: auto;
@@ -35,6 +45,8 @@ header h1 {
     font-size: 36px;
     line-height: 42px;
     color: white;
+    margin-bottom: 24px;
+    
 }
 
 header p {
@@ -52,6 +64,12 @@ form{
 
 form fieldset{
     border: none;
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 form fieldset legend{
@@ -88,14 +106,23 @@ form fieldset legend{
     margin-left: 12px;
     font-size: 12px;
     line-height: 20px;
-    color: #C1BCCC;
+    color: #6c6a71;
 }
 
-.input-wrapper input, textarea, select{
+.input-wrapper input,.input-wrapper textarea,.input-wrapper select{
     background: #FAFAFC;
     border: 1px solid #E6E6F0;
     border-radius: 8px;
     height: 56px;
+    padding: 0 24px;
+
+    font-size: 16px;
+    line-height: 26px;
+    color: #6c6a71;
+}
+
+.input-wrapper textarea{
+    height: 168px;
 }
 
 
