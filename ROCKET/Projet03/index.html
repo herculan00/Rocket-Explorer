@@ -54,31 +54,52 @@
                         <div class="input-wrapper">
                             <label for="cat">Categoria</label>
                             <select name="cat" id="cat">
-                
+                                <option value="live">Ao vivo</option>
+                                <option value="podcast">Podcast</option>
                             </select>
-                        </div>
+                         </div>
+                    </div>
+                </fieldset>
 
-    
+                <fieldset> 
+                    <div class="fieldset-wrapper">
                         <legend>Privacidade</legend>
                         <div class="line"></div>
 
-                        <label for="email">E-mail do administrador <span>(digite um email válido)</span></label>
-                        <input type="email" name="email" id="email">
-            
-                        <label for="senha">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span> </label>
-                        <input type="password" name="extra" id="senha">
-            
-                        <label for="check">Evento privado</label>
-                        <input type="checkbox" name="check" id="check">
-                
-
-                    
+                        <div class="input-wrapper">
+                            <label for="email">E-mail do administrador <span>(digite um email válido)</span></label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="senha">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span> </label>
+                            <input type="password" name="extra" id="senha">       
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="check">Evento privado</label>
+                            <input type="checkbox" name="check" id="check">
+                        </div>
+                            
+                    </div>
+                </fieldset>
+                <fieldset> 
+                    <div class="fieldset-wrapper">
                         <legend>Data e hora</legend>
                         <div class="line"></div>
-
-                        <label for="date">Data</label>
-                        <input type="date" name="date" id="date">
-                
+                        
+                        <div class="col-3">
+                            <div class="input-wrapper">
+                                <label for="date">Data</label>
+                                <input type="date" name="date" id="date">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="timeB">Das</label>
+                                <input type="time" name="timeB" id="timeB">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="timeE">Até</label>
+                                <input type="time" name="timeE" id="timeE">
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
 
