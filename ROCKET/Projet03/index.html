@@ -27,7 +27,7 @@
         </header>
 
         <main>
-            <form action="" method="">
+            <form id="form" action="" method="">
 
                 <fieldset>
                     <div class="fieldset-wrapper">
@@ -37,7 +37,7 @@
                         
                         <div class="input-wrapper">
                             <label for="title">Título do evento <span>(mínimo 8 caracteres)</span> </label>
-                            <input type="text" name="title" id="title">
+                            <input required minlength="8" type="text" name="title" id="title">
                         </div>
                         <div class="input-wrapper">
                             <label for="link">Link do evento <span>(comece com https://)</span></label>
@@ -72,7 +72,7 @@
                         </div>
                         <div class="input-wrapper">
                             <label for="senha">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span> </label>
-                            <input type="password" name="senha" id="senha">       
+                            <input required minlength="8" type="password" name="senha" id="senha">       
                         </div>
                         <div class="checkbox-wrapper">
                             <input type="checkbox" name="check" id="check">
@@ -106,15 +106,10 @@
         </main>
         <footer>
             <div class="btn-submit">
-                <input id="btn" type="submit" value="Salvar evento">
+                <input form="form" id="btn" type="submit" value="Salvar evento">
             </div>
         </footer>
 
     </div>
-   
-
-   
-<input type="password" name="z" id="x">
-
 </body>
 </html>
