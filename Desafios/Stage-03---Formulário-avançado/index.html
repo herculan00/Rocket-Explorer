@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie a sua mentoria</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+
+        <header>    
+            <h1>Avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá? <br> </p>
+            <img id="rating" src="images/img.svg" alt="balão de diálogo com  classificação em estrelas, ele tem 3 estrelas de 5 preenchidas">
+        </header>
+
+        <main>
+            <div class="first-div">
+                Informações Pessoais
+            </div>
+
+            <form id="form" action="" method="">
+
+                <fieldset>
+                    <div class="fieldset-wrapper">
+
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="title">Nome</label>
+                                <input required minlength="8" type="text" name="name" id="name">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="title">Apelido</label>
+                                <input required minlength="8" type="text" name="surname" id="surname">
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="email">E-mail <span>(digite um email válido)</span></label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        
+                    </div>
+                </fieldset>
+
+                <fieldset> 
+                    <div class="fieldset-wrapper">
+                        <legend>Informações do mentor</legend>
+                        <div class="line"></div>
+                        
+                        <div class="input-wrapper">
+                            <label for="cat">Selecione quem foi o seu mentor</label>
+                            <select name="cat" id="cat">
+                                <option value="Pedro">Pedro</option>
+                                <option value="Paulo">Paulo</option>
+                            </select>
+                         </div>
+                         <div class="input-wrapper">
+                            <label for="extra">Feedback sobre o mentor</label>
+                            <textarea name="extra" id="extra"></textarea>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="check" id="check">
+                            <label for="check">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                        </div>         
+                    </div>
+                </fieldset>
+                <fieldset> 
+                    <div class="fieldset-wrapper">
+                        <legend>Agendando próxima mentoria</legend>
+                        <div class="line"></div>                     
+
+                        <div class="col-3">
+                            <div class="input-wrapper">
+                                <label for="date">Data</label>
+                                <input type="date" name="date" id="date">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="timeB">Das</label>
+                                <input type="time" name="timeB" id="timeB">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="timeE">Até</label>
+                                <input type="time" name="timeE" id="timeE">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="btn-submit">
+                    <input form="form" id="btn" type="submit" value="Salvar">
+                </div>
+            </form> 
+        </main>
+    </div>
+</body>
+</html>
