@@ -1,5 +1,7 @@
 :root{
     --ff-body: 'Epilogue', sans-serif;
+
+    font-size: 62.5%;
 }
 
 *{
@@ -16,12 +18,26 @@ body{
     background: #28293E;
 }
 
+.page{
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    margin-top: 10rem;
+}
+
 header p{
     font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
     color: #BBB3E6;
 }
@@ -29,8 +45,26 @@ header p{
 header h1{
     font-style: normal;
     font-weight: 800;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
     text-align: center;
-    letter-spacing: -1px;
+    letter-spacing: -0.1rem;
+}
+
+main{
+    margin-top: 8rem;
+}
+
+.card{
+    position: relative;
+}
+.card img{
+    height: 41.6rem;
+    object-fit: cover;
+}
+
+.card h2{
+    position: absolute;
+    bottom: 5.2rem;
+    left: 2.8rem;
 }
