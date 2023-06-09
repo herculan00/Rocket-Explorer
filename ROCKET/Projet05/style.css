@@ -35,6 +35,7 @@ img:hover{
 
 header{
     margin-top: 10rem;
+    animation: topdown 700ms;
 }
 
 header p{
@@ -50,8 +51,8 @@ header p{
 header h1{
     font-style: normal;
     font-weight: 800;
-    font-size: 5.6rem;
-    line-height: 6.4rem;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
     text-align: center;
     letter-spacing: -0.1rem;
 }
@@ -60,7 +61,10 @@ main{
     margin-top: 8rem;
     display: grid;
     gap: 3.2rem;
+    animation: downtop 700ms 350ms backwards;
+
 }
+
 
 .card{
     position: relative;
@@ -101,14 +105,6 @@ main{
     color: #090039;
 }
 
-header{
-    animation: topdown 700ms;
-}
-
-main{
-    animation: downtop 700ms 350ms backwards;
-}
-
 @keyframes topdown{
 
     0%
@@ -136,5 +132,36 @@ main{
     {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media(min-width: 700px){
+
+   
+    header h1{
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+    }
+    
+    .page{
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
+
+    main{
+        grid-template-areas: "A B B""C C D";
+    }
+    
+    main div:nth-child(1){
+        grid-area: A;
+    }
+    main div:nth-child(2){
+        grid-area: B;
+    }
+    main div:nth-child(3){
+        grid-area: C;
+    }
+    main div:nth-child(4){
+        grid-area: D;
     }
 }
