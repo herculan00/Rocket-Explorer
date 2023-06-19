@@ -1,0 +1,42 @@
+:root{
+    --ff-body: 'Epilogue', sans-serif;
+
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: var(--ff-body);
+    color: #ffffff;
+
+    background: #28293E;
+}
+
+.page{
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #8E9AAF;
+}
+
+header h1{
+    background-color: #CBC0D3;
+}
+
+main{
+    background-color: #EFF1FF;
+}
+
+main img{
+    width: 100%;
+    height: auto;
+    transition: transform 200ms;
+}
