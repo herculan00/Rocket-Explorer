@@ -36,6 +36,7 @@ while(option != 3){
     option = Number(openMsg())
 }
 
+
 alert("Programa terminou")
 
 
