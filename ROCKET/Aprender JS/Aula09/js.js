@@ -1,6 +1,4 @@
-
-
-alert("Lista de pacientes")
+alert("Lista de pacientes e seu IMC")
 
 let patients = [
     {
