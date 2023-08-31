@@ -2,7 +2,7 @@
 let openMsg = () => {
   return  prompt(
         `
-         Olá usuário! Digite o núnemero daopão desejada
+         Olá usuário! Digite o núnemero da opção desejada
         
             1 - Cadastrar um item na lista
             2 - Mostrar itens cadastrados
@@ -30,7 +30,12 @@ while(option != 3){
             }
         break;
 
+        case 3:
+            alert("Programa a terminar")
+        break;
+
         default:
+            alert("Opção inválida")
         break;
     }
     option = Number(openMsg())
