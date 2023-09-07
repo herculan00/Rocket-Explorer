@@ -101,3 +101,8 @@ button{
     gap: .8rem;
 }
 
+button:hover{
+    background: #045770;
+    cursor: pointer;
+}
+
