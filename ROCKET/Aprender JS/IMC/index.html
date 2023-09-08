@@ -12,26 +12,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
 
-        <h1>Cálculo do IMC</h1>
-        <form>
-            <div class="wrap-wrap-form">
-                <div class="wrap-form">
-                    <label for="weight">Peso(Kg)</label>
-                    <input type="number" id="weight" name="weight">
-        
+    <div class="container">
+        <main class="card">
+
+            <h1>Cálculo do IMC</h1>
+            <form>
+                <div class="wrap-wrap-form">
+                    <div class="wrap-form">
+                        <label for="weight">Peso(Kg)</label>
+                        <input type="number" id="weight" name="weight">
+            
+                    </div>
+                    <div class="wrap-form">
+                        <label for="height">Altura(cm)</label>
+                        <input type="number" id="height" name="height">
+                    </div>
                 </div>
-                <div class="wrap-form">
-                    <label for="height">Altura(cm)</label>
-                    <input type="number" id="height" name="height">
-                </div>
-            </div>
-          
-            <button type="submit">Calcular IMC <img src="image/arrow.svg" alt="seta a apontar para a direita"></button>
-                
-        </form>
-    </main>
+              
+                <button type="submit">Calcular IMC <img src="image/arrow.svg" alt="seta a apontar para a direita"></button>
+                    
+            </form>
+        </main>
+    </div>
+
+    <div class="modal-wrap">
+        <div class="card">
+            <h2>O seu IMC é de 23</h2>
+            <img src="image/close.svg" alt="x">
+        </div>
+       
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
