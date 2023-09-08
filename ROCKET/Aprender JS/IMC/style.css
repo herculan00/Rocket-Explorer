@@ -85,7 +85,7 @@ form{
     outline: 1px solid #02799D;
 }
 
-button{
+main button{
     border: none;
     padding: 1.6rem;
 
@@ -111,6 +111,9 @@ button:hover{
     cursor: pointer;
 }
 
+.hide{
+    display: none;
+}
 
 /* Modal */
 
@@ -131,7 +134,9 @@ button:hover{
 
     width: 36.6rem;
     height: 15.2rem;
+}
 
+.modal-wrap h2{
     color: #0C3440;
     font-size: 3.2rem;
     font-style: normal;
@@ -140,12 +145,44 @@ button:hover{
 }
 
 
-.modal-wrap img{
+#btn-close{
     position: absolute;
     top: 0;
     right: 0;
-    width: 1.4rem;
-    height: 1.4rem;
+
+    width: 2.4rem;
+    height: 2.4rem;
     margin: 1.6rem 1.6rem 0 0;
+
+    background: none;
+    border: none;
 }
 
+.modal-alert {
+    position: absolute;
+    top: 0;
+
+}
+
+.modal-alert div{
+    border-radius: 0;
+    background-color: red;
+
+    width: 100vw;
+    height: 3.6rem;
+    padding: 0;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.0rem; 
+    
+
+}
