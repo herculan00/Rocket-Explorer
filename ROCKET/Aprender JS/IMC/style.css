@@ -112,7 +112,8 @@ button:hover{
 }
 
 .hide{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* Modal */
@@ -158,6 +159,8 @@ button:hover{
     border: none;
 }
 
+/*Model alert error*/
+
 .modal-alert {
     position: absolute;
     top: 0;
@@ -166,7 +169,8 @@ button:hover{
 
 .modal-alert div{
     border-radius: 0;
-    background-color: red;
+    background: #F03E3E;
+    color: #FFF;
 
     width: 100vw;
     height: 3.6rem;
@@ -177,12 +181,9 @@ button:hover{
     justify-content: center;
     align-items: center;
 
-    color: #FFF;
 
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.0rem; 
-    
-
 }
