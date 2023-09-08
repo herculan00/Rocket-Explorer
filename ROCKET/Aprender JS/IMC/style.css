@@ -126,11 +126,26 @@ button:hover{
     background: rgba(0, 0, 0, 0.70);
 }
 
-.modal-wrap img{
+.modal-wrap div{
     position: relative;
-    top: 0;
-    left: 0;
 
-    background: #082404;
+    width: 36.6rem;
+    height: 15.2rem;
+
+    color: #0C3440;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.0rem; 
+}
+
+
+.modal-wrap img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 1.6rem 1.6rem 0 0;
 }
 
