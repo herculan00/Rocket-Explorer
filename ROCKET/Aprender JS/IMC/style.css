@@ -178,5 +178,12 @@ button:hover{
     font-weight: 700;
     line-height: 2.0rem; 
 
+    transform: translateY(0);
+    transition: transform 1s;
+
+}
+
+.modal-alert.hide{
+    transform: translateY(-30px); 
 }
 

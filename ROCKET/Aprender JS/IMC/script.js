@@ -6,16 +6,11 @@ let calcImc = (weight,height) => {
     let nHeight = height.search("[^0-9]")
 
     if (nWeight == -1 && nHeight == -1) {
-        return (weight/((height/100)**2)).toFixed(1)
+        return (Number(weight)/((Number(height)/100)**2)).toFixed(1)
     }
     else {
         return null
     }
-
-}
-
-let printImc = (weight,height) => {
-    return `Possui um IMC de: ${calcImc(weight,height)}!`
 }
 
 const nodeWeight = document.querySelector("#weight")
@@ -29,15 +24,17 @@ const nodeAlert = document.querySelector(".modal-alert")
 nodeSubmit.addEventListener('click', (e)=>{
     event.preventDefault()
 
-    let print = printImc(nodeWeight.value,nodeHeight.value)
+    let nIMC = calcImc(nodeWeight.value,nodeHeight.value)
+    let print = `Possui um IMC de: ${nIMC}!`
 
-    if (print == null) {
-        nodeAlert.classList.toggle('hide')
+
+    if (nIMC == null) {
+        nodeAlert.classList.remove('hide')
         
     } else {
         nodeModal.querySelector("div h2").textContent = print
         nodeModal.classList.toggle('hide')
-        nodeAlert.classList.remove('hide')
+        nodeAlert.classList.add('hide')
     }
 
 })
