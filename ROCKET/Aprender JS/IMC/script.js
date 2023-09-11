@@ -1,16 +1,47 @@
+
+
 let calcImc = (weight,height) => {
-    return (weight/((height/100)**2)).toFixed(1)
+
+    let nWeight = weight.search("[^0-9]")
+    let nHeight = height.search("[^0-9]")
+
+    if (nWeight == -1 && nHeight == -1) {
+        return (weight/((height/100)**2)).toFixed(1)
+    }
+    else {
+        return null
+    }
+
 }
 
-let printImc = (patient) => {
-    return `Paciente ${patient.name} possui o IMC de: ${calcImc(patient.weight,patient.height).toFixed(2)}`
+let printImc = (weight,height) => {
+    return `Possui um IMC de: ${calcImc(weight,height)}!`
 }
 
 const nodeWeight = document.querySelector("#weight")
 const nodeHeight = document.querySelector("#height")
-const nodeBtn = document.querySelector("button")
+const nodeSubmit = document.querySelector("#btn-submit")
+const nodeModal = document.querySelector(".modal-wrap")
+const nodeClose = document.querySelector("#btn-close")
+const nodeAlert = document.querySelector(".modal-alert")
 
-nodeBtn.addEventListener('click', (e)=>{
 
-    alert(calcImc(nodeWeight.value,nodeHeight.value))
+nodeSubmit.addEventListener('click', (e)=>{
+    event.preventDefault()
+
+    let print = printImc(nodeWeight.value,nodeHeight.value)
+
+    if (print == null) {
+        nodeAlert.classList.toggle('hide')
+        
+    } else {
+        nodeModal.querySelector("div h2").textContent = print
+        nodeModal.classList.toggle('hide')
+        nodeAlert.classList.remove('hide')
+    }
+
+})
+
+nodeClose.addEventListener('click', (e)=>{
+    nodeModal.classList.toggle('hide')
 })

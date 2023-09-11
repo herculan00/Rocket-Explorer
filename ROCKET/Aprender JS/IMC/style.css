@@ -164,26 +164,19 @@ button:hover{
 .modal-alert {
     position: absolute;
     top: 0;
+    text-align: center;
+    padding: .8rem 0;
+    width: 100vw;
 
-}
-
-.modal-alert div{
     border-radius: 0;
     background: #F03E3E;
     color: #FFF;
-
-    width: 100vw;
-    height: 3.6rem;
-    padding: 0;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.0rem; 
+
 }
+
