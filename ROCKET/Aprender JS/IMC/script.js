@@ -16,29 +16,42 @@ let calcImc = (weight,height) => {
 const nodeWeight = document.querySelector("#weight")
 const nodeHeight = document.querySelector("#height")
 const nodeSubmit = document.querySelector("#btn-submit")
+
+/*
 const nodeModal = document.querySelector(".modal-wrap")
-const nodeClose = document.querySelector("#btn-close")
+const nodeClose = document.querySelector("#btn-close")*/
+
 const nodeAlert = document.querySelector(".modal-alert")
 
+const Modal = {
+
+    wrapper: document.querySelector(".modal-wrap"),
+    btnClose: document.querySelector("#btn-close"),
+    message: document.querySelector(".modal-wrap div h2"),
+
+    toggle(){
+        this.wrapper.classList.toggle('hide')
+    }
+}
 
 nodeSubmit.addEventListener('click', (e)=>{
     event.preventDefault()
 
     let nIMC = calcImc(nodeWeight.value,nodeHeight.value)
-    let print = `Possui um IMC de: ${nIMC}!`
+    let print = `Seu IMC é: ${nIMC}!`
 
 
     if (nIMC == null) {
         nodeAlert.classList.remove('hide')
         
     } else {
-        nodeModal.querySelector("div h2").textContent = print
-        nodeModal.classList.toggle('hide')
+        Modal.message.innerText = print
+        Modal.toggle()
         nodeAlert.classList.add('hide')
     }
 
 })
 
-nodeClose.addEventListener('click', (e)=>{
-    nodeModal.classList.toggle('hide')
-})
+Modal.btnClose.onclick = (e) => {
+    Modal.toggle()
+}
