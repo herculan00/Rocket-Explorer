@@ -1,17 +1,15 @@
+import { Route } from "./route.js"
 
-const routes = {
-    "/":"/ROCKET/Stage06/Projet07/pages/home.html",
-    "/about":"/ROCKET/Stage06/Projet07/pages/about.html",
-    "/contact":"/ROCKET/Stage06/Projet07/pages/contact.html",
-    404:"/ROCKET/Stage06/Projet07/pages/404.html",
-}
+const route = new Route();
 
-
-
+route.add("/","/ROCKET/Stage06/Projet07/pages/home.html")
+route.add("/about","/ROCKET/Stage06/Projet07/pages/about.html")
+route.add("/contact","/ROCKET/Stage06/Projet07/pages/contact.html")
+route.add(404,"/ROCKET/Stage06/Projet07/pages/404.html")
 
 
-handle()
+route.handle()
 
-window.onpopstate = handle()
+window.onpopstate = () => { route.handle() }
 
-window.route = route()
+window.route = () => { route.route() }

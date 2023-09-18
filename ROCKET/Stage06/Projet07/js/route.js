@@ -1,5 +1,5 @@
-class Route {
-
+export class Route {
+    routes = {}
 
     add(routeName,page){
         this.routes[routeName] = page
