@@ -5,14 +5,16 @@ export class Favorietes{
     }
 
     load(){
-         this.entries = [
-            { 
-                login: 'maykbrito',
-                name: 'Mayk Brito',
-                public_repos: '76',
-                followers: '120000'
-            } 
-        ]
+         this.entries = JSON.parse(localStorage.getItem("@github-favorites:")) || []
+        
+    }
+
+    delete(user){
+        const filteredEntries = this.entries.filter( entry => {
+            return entry.login !== user.login
+        })
+
+        this.entries = filteredEntries
     }
 }
 
@@ -41,7 +43,14 @@ export class FavoriesView extends Favorietes{
             row.querySelector('.repositories').textContent = user.public_repos
             row.querySelector('.followers').textContent = user.followers
 
-    
+            row.querySelector('.remove').onclick = () => {
+                const isOk = confirm("Tem a certeza que quer remover esta linha?")
+
+                if(isOk){
+                    this.delete(user)
+                }
+            }
+
             this.tbody.append(row)
         })
 
