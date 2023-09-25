@@ -13,6 +13,14 @@ export default createGlobalStyle`
         color: ${({theme}) => theme.COLORS.WHITE};
     }
 
+    body,input,button,textarea{
+        font-family: 'Roboto Slab', serif;
+        font-size: 16px;
+        outline: none;
+
+        -webkit-font-smoothing: antialiased;
+    }
+
     a{
         text-decoration: none;
     }
