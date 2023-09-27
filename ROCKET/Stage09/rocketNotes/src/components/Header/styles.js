@@ -49,6 +49,15 @@ export const Profile = styled.div`
 `
 
 export const Logout= styled.button`
-    background-color: azure;
+    
+
+    border: none;
+    background: none;
+   
+
+    >svg{
+        font-size: 36px;
+        color: ${({theme})=> theme.COLORS.GRAY_100};
+    }
 
 `
