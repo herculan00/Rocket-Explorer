@@ -9,10 +9,10 @@ export const Container = styled.div`
     grid-template-columns: 250px auto;
     grid-template-rows: 105px 128px auto 64px;
     grid-template-areas: 
-    "brand" "header"
-    "menu" "search"
-    "menu" "content"
-    "newnote" "content";
+    "brand header"
+    "menu search"
+    "menu content"
+    "newnote content";
 
 `
 
