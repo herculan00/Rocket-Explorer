@@ -11,7 +11,10 @@ export function Home(){
             <Header/>
 
             <Menu>
-
+                <li>Todos</li>
+                <li>Frontend</li>
+                <li>Node</li>
+                <li>React</li>
             </Menu>
             <Search>
 
