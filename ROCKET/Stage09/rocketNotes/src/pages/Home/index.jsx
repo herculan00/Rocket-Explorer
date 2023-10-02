@@ -1,6 +1,7 @@
 import { Container, Brand, Menu, Search, Content, Newnote } from "./styles"
 import { Header } from "../../components/Header"
 import { ButtonText } from "../../components/ButtonText"
+import { FiPlus } from "react-icons/fi"
 
 export function Home(){
     return(
@@ -26,7 +27,8 @@ export function Home(){
             </Content>
             
             <Newnote>
-
+                <FiPlus/>
+                <ButtonText title="Criar nota"/>
             </Newnote>
 
         </Container>
