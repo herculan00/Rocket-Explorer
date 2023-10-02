@@ -46,13 +46,8 @@ export const Menu = styled.ul`
 
     grid-area: menu;
     
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 24px;
-
+    text-align: center;
+ 
     list-style: none;
 
     padding-top: 64px;
@@ -61,6 +56,8 @@ export const Menu = styled.ul`
 
 
     >li{
+        margin-bottom: 24px;
+
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -69,9 +66,6 @@ export const Menu = styled.ul`
         color: ${({theme})=>theme.COLORS.GRAY_100};
     }
 
-    >li:first-child{
-        color: ${({theme})=>theme.COLORS.ORANGE};
-    }
 
 `
 
