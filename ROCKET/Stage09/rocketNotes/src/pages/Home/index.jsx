@@ -19,7 +19,7 @@ export function Home(){
                 <li><ButtonText title="React"></ButtonText></li>
             </Menu>
             <Search>
-
+                <input type="text" name="" id="" placeholder="Pesquisar pelo título" />
             </Search>
 
             <Content>
@@ -28,7 +28,7 @@ export function Home(){
             
             <Newnote>
                 <FiPlus/>
-                <ButtonText title="Criar nota"/>
+                Criar nota
             </Newnote>
 
         </Container>

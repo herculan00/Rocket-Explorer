@@ -74,6 +74,26 @@ export const Search = styled.div`
     grid-area: search;
     background-color: blue;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 64px;
+
+    background: ${({theme})=>theme.COLORS.BACKGROUND_800};
+
+    >input{
+        width: 100%;
+        height: 56px;
+
+        border: none;
+        border-radius: 10px;
+
+        padding: 20px 0 20px 16px ;
+
+        background: ${({theme})=>theme.COLORS.BACKGROUND_900};
+    }
+
 `
 
 export const Content = styled.div`
