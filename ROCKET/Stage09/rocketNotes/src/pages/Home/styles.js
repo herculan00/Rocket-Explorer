@@ -99,7 +99,7 @@ export const Search = styled.div`
 export const Content = styled.div`
 
     grid-area: content;
-    background-color: orange;
+    
 
 `
 
