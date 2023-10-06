@@ -1,7 +1,11 @@
 import { Container, Brand, Menu, Search, Content, Newnote } from "./styles"
 import { Header } from "../../components/Header"
 import { ButtonText } from "../../components/ButtonText"
-import { FiPlus } from "react-icons/fi"
+import { Input } from "../../components/Input"
+import { Section } from "../../components/Section"
+
+
+import { FiPlus, FiSearch } from "react-icons/fi"
 
 export function Home(){
     return(
@@ -19,11 +23,11 @@ export function Home(){
                 <li><ButtonText title="React"></ButtonText></li>
             </Menu>
             <Search>
-                <input type="text" name="" id="" placeholder="Pesquisar pelo título" />
+                <Input icon={FiSearch} placeholder="Pesquisar pelo título" />
             </Search>
 
             <Content>
-
+                <Section title={"Minhas notas"}/>
             </Content>
             
             <Newnote>
