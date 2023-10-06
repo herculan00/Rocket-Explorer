@@ -34,6 +34,12 @@ export function Home(){
                             tags : [{id:"1",name:"React"}]
                         }
                     }/>
+                    <Note data={
+                        {
+                            title : "Exemplo de Middleware",
+                            tags : [{id:"1",name:"express"},{id:"2",name:"nodejs"}]
+                        }
+                    }/>
                     
                 </Section>    
             </Content>
