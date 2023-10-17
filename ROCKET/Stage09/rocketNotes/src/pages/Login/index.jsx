@@ -2,6 +2,8 @@ import {Container, Form} from "./styles"
 import {FiArrowLeft,FiLock,FiMail,FiUser} from "react-icons/fi"
 import { Input } from "../../components/Input"
 import { Button } from "../../components/button"
+import { Avatar } from "../../components/Avatar"
+
 
 export function Login(){
     return(
@@ -12,6 +14,7 @@ export function Login(){
                 </a>
             </header>
             <Form>
+                <Avatar/>
                 <Input icon={FiUser} type="text" placeholder="Nome"/>
                 <Input icon={FiMail} type="text" placeholder="E-mail"/>
                 <Input icon={FiLock} type="password" placeholder="Senha atual"/>
