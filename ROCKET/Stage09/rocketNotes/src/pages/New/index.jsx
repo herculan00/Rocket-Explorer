@@ -6,6 +6,7 @@ import { Section } from "../../components/Section"
 import { Note } from "../../components/Note"
 import { Tag } from "../../components/Tag"
 import { Textarea } from "../../components/Textarea"
+import { NoteItem } from "../../components/NoteItem"
 
 import { FiPlus, FiSearch } from "react-icons/fi"
 
@@ -22,7 +23,7 @@ export function New(){
                     <Input placeholder="Título"/>
                     <Textarea placeholder="Observações"/>
                     <Section title="Links úteis">
-                        <Tag title="https://rocketseat.com.br/" />
+                        <NoteItem isNew={true} value="https://rocketseat.com.br/" />
                     </Section>
                 </Form>
             </main>
