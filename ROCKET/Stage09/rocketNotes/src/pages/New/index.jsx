@@ -23,7 +23,8 @@ export function New(){
                     <Input placeholder="Título"/>
                     <Textarea placeholder="Observações"/>
                     <Section title="Links úteis">
-                        <NoteItem isNew={true} value="https://rocketseat.com.br/" />
+                        <NoteItem isNew={false} value="https://rocketseat.com.br/" />
+                        <NoteItem isNew={true} value=""/>
                     </Section>
                 </Form>
             </main>
