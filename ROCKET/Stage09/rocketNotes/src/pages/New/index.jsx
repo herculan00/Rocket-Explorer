@@ -23,12 +23,14 @@ export function New(){
                     <Input placeholder="Título"/>
                     <Textarea placeholder="Observações"/>
                     <Section title="Links úteis">
-                        <NoteItem isNew={false} value="https://rocketseat.com.br/" />
-                        <NoteItem isNew={true} value="" placeholder="Novo link"/>
+                        <NoteItem  isNew={false} value="https://rocketseat.com.br/" />
+                        <NoteItem  isNew={true} value="" placeholder="Novo link"/>
                     </Section>
                     <Section title="Marcadores">
-                        <NoteItem isNew={false} value="React" />
-                        <NoteItem isNew={true} value="" placeholder="Novo marcador"/>
+                        <div className="tags">
+                            <NoteItem  isNew={false} value="React" />
+                            <NoteItem  isNew={true} value="" placeholder="Novo marcador"/>
+                        </div>
                     </Section>
                     <Button title="Salvar"/>
 

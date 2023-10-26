@@ -10,10 +10,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-    background: ${ ({theme, $isnew})=> $isnew ? "transparent" : theme.COLORS.BACKGROUND_900};
+    background: ${ ({theme, $isnew})=> $isnew == "true" ? "transparent" : theme.COLORS.BACKGROUND_900};
     color: ${({theme})=>theme.COLORS.GRAY_300};
 
-    border:${ ({theme, $isnew})=> $isnew ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
+    border:${ ({theme, $isnew})=> $isnew == "true" ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
 
     >button{
         border: none;
