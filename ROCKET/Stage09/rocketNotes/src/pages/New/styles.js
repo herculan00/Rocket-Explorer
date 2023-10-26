@@ -35,6 +35,10 @@ export const Form = styled.form`
         }
     }
 
+    Section + Section{
+        display: flex;
+    }
+
 
     
 `

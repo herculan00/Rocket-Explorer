@@ -1,6 +1,6 @@
 import { Container, Form} from "./styles"
 import { Header } from "../../components/Header"
-import { ButtonText } from "../../components/ButtonText"
+import { Button } from "../../components/button"
 import { Input } from "../../components/Input"
 import { Section } from "../../components/Section"
 import { Note } from "../../components/Note"
@@ -24,8 +24,14 @@ export function New(){
                     <Textarea placeholder="Observações"/>
                     <Section title="Links úteis">
                         <NoteItem isNew={false} value="https://rocketseat.com.br/" />
-                        <NoteItem isNew={true} value=""/>
+                        <NoteItem isNew={true} value="" placeholder="Novo link"/>
                     </Section>
+                    <Section title="Marcadores">
+                        <NoteItem isNew={false} value="React" />
+                        <NoteItem isNew={true} value="" placeholder="Novo marcador"/>
+                    </Section>
+                    <Button title="Salvar"/>
+
                 </Form>
             </main>
 
