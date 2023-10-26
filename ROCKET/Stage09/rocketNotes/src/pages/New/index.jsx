@@ -7,6 +7,7 @@ import { Note } from "../../components/Note"
 import { Tag } from "../../components/Tag"
 import { Textarea } from "../../components/Textarea"
 import { NoteItem } from "../../components/NoteItem"
+import {Link} from "react-router-dom"
 
 import { FiPlus, FiSearch } from "react-icons/fi"
 
@@ -17,8 +18,10 @@ export function New(){
             <main>
                 <Form>
                     <header>
-                        <h1>Criar nota</h1>
-                        <a href="/">voltar</a>
+                        <h1>Criar nota</h1>      
+                        <Link to="/">
+                            voltar
+                        </Link>
                     </header>
                     <Input placeholder="Título"/>
                     <Textarea placeholder="Observações"/>
