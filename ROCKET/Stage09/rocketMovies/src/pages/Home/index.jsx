@@ -21,7 +21,11 @@ export function Home(){
                         </Button>
                     </div>
                 </header>
-
+                <main>
+                    <Note/>
+                    <Note/>
+                    <Note/>
+                </main>
             </Content>
 
         </Container>

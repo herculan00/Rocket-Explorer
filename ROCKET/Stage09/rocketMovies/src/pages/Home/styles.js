@@ -12,6 +12,8 @@ export const Container = styled.div`
     "header"
     "content";
 
+
+
 `
 
 
@@ -19,7 +21,7 @@ export const Content = styled.div`
 
     grid-area: content;
     padding: 0 64px ;
-    overflow-y: scroll;   
+
 
 
     >header{
@@ -27,7 +29,7 @@ export const Content = styled.div`
         justify-content: space-between;
         height: 48px;
         margin-top: 50px;
-
+        margin-bottom: 40px;
 
         div{
             display: flex;
@@ -52,6 +54,12 @@ export const Content = styled.div`
             }
          }
     }
+
+    main{
+        overflow: scroll;    
+    }
+
+
 
 `
 

@@ -1,12 +1,13 @@
 
 import { Container } from "./style"
 import { Tag } from "../Tag"
+import stars from "../../assets/stars.svg"
 
 export function Note({...rest}){
     return(
         <Container {...rest}>
             <h1>Interestellar</h1>
-            <img src="assets/stars" alt="cotação de 4 estrelas para filme" />
+            <img src={stars} alt="cotação de 4 estrelas para filme" />
             <p>Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em 
                 futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. 
                 Murphy, a filha de dez anos de Cooper, acredita que seu quarto está assombrado por um 
@@ -32,14 +33,13 @@ export function Note({...rest}){
                 atrasando a partida. Ao voltarem para a Endurance, Cooper e Amelia descobrem que 23 anos 
                 se passaram.
             </p>
-            {
-                data.tags &&
-                <footer>
-                    <Tag title="Ficção Científica"/>
-                    <Tag title="Drama"/>
-                    <Tag title="Família"/>
-                </footer>
-            }
+            
+            <footer>
+                <Tag title="Ficção Científica"/>
+                <Tag title="Drama"/>
+                <Tag title="Família"/>
+            </footer>
+            
         </Container>
     )
 }
