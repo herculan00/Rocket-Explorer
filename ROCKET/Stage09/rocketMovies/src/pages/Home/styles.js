@@ -56,7 +56,31 @@ export const Content = styled.div`
     }
 
     main{
-        overflow: scroll;    
+        overflow-y: scroll; 
+        height: 716px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        
+        border-radius: 10px;
+        margin-bottom: 500px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: ${({theme}) => theme.COLORS.PINK};
+        border-radius: 10px;
+        height: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: ${({theme}) => theme.COLORS.PINK_200};
     }
 
 
