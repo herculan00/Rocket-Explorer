@@ -9,7 +9,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-    background: ${({theme})=>theme.COLORS.BACKGROUND_900};
+    background: ${({theme})=>theme.COLORS.BACKGROUND_800};
     color: ${({theme})=>theme.COLORS.GRAY_300};
 
     >input{

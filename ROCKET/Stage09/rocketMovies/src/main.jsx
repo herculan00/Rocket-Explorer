@@ -16,6 +16,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={theme}>
       <GlobalStyles/>
       <Routes/>
-    </ThemeProvider>q
+    </ThemeProvider>
   </React.StrictMode>
 )
