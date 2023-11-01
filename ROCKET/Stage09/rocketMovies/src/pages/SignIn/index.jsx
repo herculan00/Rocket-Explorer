@@ -11,8 +11,8 @@ export function SignIn(){
     return(
         <Container>
             <Login>
-                <h1>Rocket Notes</h1>
-                <p>Aplicação para salvar e gerenciar seus links úteis.</p>
+                <h1>Rocket Movies</h1>
+                <p>Aplicação para acompanhar tudo que assistir.</p>
 
                 <h2>Faça seu login</h2>
                 <Input icon={FiMail} placeholder="E-mail"/>

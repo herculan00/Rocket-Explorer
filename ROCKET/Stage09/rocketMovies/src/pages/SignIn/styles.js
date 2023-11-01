@@ -23,11 +23,11 @@ export const Login = styled.form`
     justify-content: center;
     text-align: center;
 
-    background: ${({theme})=>theme.COLORS.BACKGROUND_800};
+    background: ${({theme})=>theme.COLORS.BACKGROUND_900};
 
     >h1{
         font-size: 48px;
-        color: ${({theme})=>theme.COLORS.ORANGE};
+        color: ${({theme})=>theme.COLORS.PINK};
     }
 
     >h2{
@@ -42,7 +42,7 @@ export const Login = styled.form`
     }
 
     >a{
-        color: ${({theme})=>theme.COLORS.ORANGE};
+        color: ${({theme})=>theme.COLORS.PINK};
 
         margin-top: 124px;
     }
