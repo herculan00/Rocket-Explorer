@@ -58,17 +58,18 @@ export const Content = styled.div`
     main{
         overflow-y: scroll; 
         height: 716px;
+        padding-right: 8px;
     }
 
     ::-webkit-scrollbar {
-        width: 20px;
+        width: 8px;
     }
 
     /* Track */
     ::-webkit-scrollbar-track {
         
         border-radius: 10px;
-        margin-bottom: 500px;
+        margin-bottom: 620px;
     }
     
     /* Handle */
@@ -80,7 +81,7 @@ export const Content = styled.div`
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: ${({theme}) => theme.COLORS.PINK_200};
+        background: ${({theme}) => theme.COLORS.PINK_100};
     }
 
 

@@ -8,7 +8,7 @@ export const Container = styled.div`
     align-items: flex-start;
     width: 100%;
     margin-bottom: 24px;
-   
+    border-radius: 16px;
 
     background: ${({theme})=>theme.COLORS.PINK_200};
 

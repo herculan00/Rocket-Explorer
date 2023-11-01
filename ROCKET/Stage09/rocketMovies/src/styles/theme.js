@@ -6,6 +6,7 @@ export default {
   
       WHITE: "#F4EDE8",
       PINK: "#FF859B",
+      PINK_100: "#d97285",
       PINK_200: "#FF859B1a",
   
       GRAY_100: "#999591",
