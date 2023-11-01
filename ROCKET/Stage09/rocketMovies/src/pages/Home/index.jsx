@@ -6,6 +6,7 @@ import { Section } from "../../components/Section"
 import { Note } from "../../components/Note"
 
 import { FiPlus, FiSearch } from "react-icons/fi"
+import {Link} from "react-router-dom"
 
 export function Home(){
     return(
@@ -15,11 +16,13 @@ export function Home(){
             <Content>
                 <header>
                     <h1>Meus Filmes</h1>
-                    <div>
+                    <Link to="/new">
+                        
                         <Button title='Adicionar filme'>
                             <FiPlus/>
                         </Button>
-                    </div>
+                    
+                    </Link>
                 </header>
                 <main>
                     <Note/>

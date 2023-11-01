@@ -31,11 +31,16 @@ export const Content = styled.div`
         margin-top: 50px;
         margin-bottom: 40px;
 
-        div{
+        >a{
+            width: 207px;
+            height: 48px;
+
             display: flex;
             align-items: center;
             background-color: ${({theme})=> theme.COLORS.PINK};
             border-radius: 10px;
+      
+
 
             button{
                 margin-top: 0;
@@ -52,7 +57,9 @@ export const Content = styled.div`
             svg{
                 font-size: 16px;
             }
-         }
+            
+
+        }
     }
 
     main{

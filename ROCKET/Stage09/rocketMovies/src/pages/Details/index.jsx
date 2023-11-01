@@ -4,9 +4,9 @@ import { Container} from "./styles"
 import { Header } from "../../components/Header"
 import { Section } from "../../components/Section"
 import { Tag } from "../../components/Tag"
-import { Button } from "../../components/button"
+import { Input } from "../../components/Input"
 import {Link} from "react-router-dom"
-import {FiArrowLeft} from "react-icons/fi"
+import {FiArrowLeft,FiClock} from "react-icons/fi"
 import stars from "../../assets/stars.svg"
 
 export function Details(){
@@ -19,8 +19,17 @@ export function Details(){
             <FiArrowLeft/>
             Voltar
         </Link>
-        <h1>Interestellar</h1>
-        <img src={stars} alt="cotação de 4 estrelas para filme" />
+        <section>
+          <h1>Interestellar</h1>
+          <img src={stars} alt="cotação de 4 estrelas para filme" />
+        </section>
+        <div>
+          <img src="https://github.com/rodrigorgtic.png" 
+          alt="Imagem de perfil do Rodrigo Gonçalves"/>
+          <span>Por Rodrigo Gonçalves</span>
+          <FiClock/>
+          <span>23/05/22 às 08:00</span>
+        </div>
         <footer>
             <Tag title="Ficção Científica"/>
             <Tag title="Drama"/>
@@ -51,6 +60,8 @@ export function Details(){
             atrasando a partida. Ao voltarem para a Endurance, Cooper e Amelia descobrem que 23 anos 
             se passaram.
         </p>
+
+        
 
       </main>
     </Container>

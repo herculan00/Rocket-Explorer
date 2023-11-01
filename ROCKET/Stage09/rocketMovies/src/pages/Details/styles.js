@@ -13,7 +13,6 @@ export const Container = styled.div`
 
     main{
         grid-area: content;
-        
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -24,48 +23,87 @@ export const Container = styled.div`
         overflow-y: scroll; 
         padding-right: 8px;
 
-        background: ${({theme})=>theme.COLORS.PINK_200};
+        background: ${({theme})=>theme.COLORS.BACKGROUND_900};
 
-        padding: 32px;
+        margin: 40px 123px;
 
-        >h1{
+        a{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: ${({theme})=>theme.COLORS.PINK};
+            margin-bottom: 24px;
+        }
+
+        >section{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px;
+
+            h1{
             text-align: left;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 36px;
             color: ${({theme})=>theme.COLORS.WHITE};
-            margin-bottom: 8px;
+            
+            }
+            img{
+                height: 20px;
+               
+            }
         }
-        img{
-            height: 12px;
-            margin-bottom: 15px;
+
+        >div{
+            
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            img{
+                width: 16px;
+                height: 16px;
+                border-radius: 66%;
+                margin: 0;
+            }
+
+            input{
+                background: transparent;
+                border: none;
+                color: ${({theme})=>theme.COLORS.WHITE};
+            }
+            svg{
+                color: ${({theme})=>theme.COLORS.PINK};
+                font-size: 16px;
+            }
         }
         p{
-            height: 52px;
+            width: 1113px;
             margin-bottom: 15px;
+            text-align: justify;
         }
         >footer{
             display: flex;
             width: 100%;
             margin-top: 24px;
+            margin-bottom: 54px;
         }
     }
 
     ::-webkit-scrollbar {
-        width: 8px;
-    }
+        width: 8px;}
 
-    /* Track */
+            /* Track */
     ::-webkit-scrollbar-track {
         
         border-radius: 10px;
-        margin-bottom: 620px;
+        
     }
     
     /* Handle */
     ::-webkit-scrollbar-thumb {
         background: ${({theme}) => theme.COLORS.PINK};
         border-radius: 10px;
-        height: 5px;
+    
     }
 
     /* Handle on hover */
@@ -73,5 +111,5 @@ export const Container = styled.div`
         background: ${({theme}) => theme.COLORS.PINK_100};
     }
 
- 
+
 `
