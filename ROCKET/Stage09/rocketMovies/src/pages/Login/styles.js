@@ -6,15 +6,22 @@ export const Container = styled.div`
     >header{
         width: 100%;
         height: 144px;
-        background: ${({theme})=>theme.COLORS.BACKGROUND_900};
+        background: ${({theme})=>theme.COLORS.PINK_200};
 
         display: flex;
         align-items: center;
 
         padding: 0 124px;
 
+        a{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: ${({theme})=>theme.COLORS.PINK};
+        }
+
         svg{
-            color: ${({theme})=>theme.COLORS.GRAY_100};
+            color: ${({theme})=>theme.COLORS.PINK};
             font-size: 24px;
         }
     }
@@ -59,7 +66,7 @@ export const Avatar = styled.div`
         align-items: center;
         justify-content: center;
 
-        background: ${({theme})=>theme.COLORS.ORANGE};
+        background: ${({theme})=>theme.COLORS.PINK};
         border-radius: 50%; 
 
         cursor: pointer;

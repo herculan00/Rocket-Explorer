@@ -1,56 +1,77 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
     width: 100%;
     height: 100vh;
-    
+
     display: grid;
-    grid-template-rows: 105px auto;
+    grid-template-rows: 105px  auto ;
     grid-template-areas: 
     "header"
     "content";
 
-    >main{
+    main{
         grid-area: content;
-        overflow-y: scroll;
-        padding: 64px 0;
-    }
-`;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 24px;
+        border-radius: 16px;
 
-export const Links = styled.ul`
+        overflow-y: scroll; 
+        padding-right: 8px;
 
-    list-style: none;
+        background: ${({theme})=>theme.COLORS.PINK_200};
 
-    >li{
-        margin-top: 12px;
+        padding: 32px;
 
-        a{
-            color: ${({theme})=> theme.COLORS.WHITE};
+        >h1{
+            text-align: left;
+            font-weight: 700;
+            font-size: 24px;
+            color: ${({theme})=>theme.COLORS.WHITE};
+            margin-bottom: 8px;
+        }
+        img{
+            height: 12px;
+            margin-bottom: 15px;
+        }
+        p{
+            height: 52px;
+            margin-bottom: 15px;
+        }
+        >footer{
+            display: flex;
+            width: 100%;
+            margin-top: 24px;
         }
     }
 
-`
-export const Content = styled.div`
-
-    max-width: 550px;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-
-    >button:first-child{
-        align-self: end;
+    ::-webkit-scrollbar {
+        width: 8px;
     }
 
-    >h1{
-        font-size: 36px;
-        font-weight: 500;
-        padding-top: 64px;
+    /* Track */
+    ::-webkit-scrollbar-track {
+        
+        border-radius: 10px;
+        margin-bottom: 620px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: ${({theme}) => theme.COLORS.PINK};
+        border-radius: 10px;
+        height: 5px;
     }
 
-    >p{
-        font-size: 16px;
-        margin-top: 16px;
-        text-align: justify;
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: ${({theme}) => theme.COLORS.PINK_100};
     }
+
+ 
 `

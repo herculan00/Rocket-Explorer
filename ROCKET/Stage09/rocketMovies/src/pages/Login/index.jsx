@@ -11,8 +11,9 @@ export function Login(){
     return(
         <Container>
             <header>
-                <Link to="/">
+                <Link to="/">   
                     <FiArrowLeft/>
+                    Voltar
                 </Link>
             </header>
             <Form>
