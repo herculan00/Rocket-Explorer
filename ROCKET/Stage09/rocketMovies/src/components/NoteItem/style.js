@@ -10,7 +10,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-    background: ${ ({theme, $isnew})=> $isnew == "true" ? "transparent" : theme.COLORS.BACKGROUND_900};
+    background: ${ ({theme, $isnew})=> $isnew == "true" ? "transparent" : theme.COLORS.BACKGROUND_800};
     color: ${({theme})=>theme.COLORS.GRAY_300};
 
     border:${ ({theme, $isnew})=> $isnew == "true" ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
@@ -24,7 +24,7 @@ export const Container = styled.div`
         color: ${({theme})=>theme.COLORS.RED};
     }
     .button-add{
-        color: ${({theme})=>theme.COLORS.ORANGE};
+        color: ${({theme})=>theme.COLORS.PINK};
     }
 
 

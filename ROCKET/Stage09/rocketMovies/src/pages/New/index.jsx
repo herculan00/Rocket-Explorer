@@ -9,7 +9,7 @@ import { Textarea } from "../../components/Textarea"
 import { NoteItem } from "../../components/NoteItem"
 import {Link} from "react-router-dom"
 
-import { FiPlus, FiSearch } from "react-icons/fi"
+import { FiPlus, FiArrowLeft } from "react-icons/fi"
 
 export function New(){
     return(
@@ -18,25 +18,27 @@ export function New(){
             <main>
                 <Form>
                     <header>
-                        <h1>Criar nota</h1>      
                         <Link to="/">
-                            voltar
+                            Voltar
+                            <FiArrowLeft/>
                         </Link>
+                        <h1>Criar nota</h1>      
                     </header>
-                    <Input placeholder="Título"/>
+                    <div className="row">
+                        <Input placeholder="Título"/>
+                        <Input placeholder="Sua nota (de 0 a 5)"/>
+                    </div>
                     <Textarea placeholder="Observações"/>
-                    <Section title="Links úteis">
-                        <NoteItem  isNew={false} value="https://rocketseat.com.br/" />
-                        <NoteItem  isNew={true} value="" placeholder="Novo link"/>
-                    </Section>
                     <Section title="Marcadores">
                         <div className="tags">
                             <NoteItem  isNew={false} value="React" />
                             <NoteItem  isNew={true} value="" placeholder="Novo marcador"/>
                         </div>
                     </Section>
-                    <Button title="Salvar"/>
-
+                    <div className="row">
+                        <Button title="Salvar"/>
+                        <Button title="Excluir filme"/>
+                    </div>
                 </Form>
             </main>
 

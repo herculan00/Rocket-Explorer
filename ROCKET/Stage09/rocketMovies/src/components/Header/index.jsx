@@ -7,7 +7,7 @@ export function Header() {
     return(
        <Container>
             <Brand>
-                <h1>Rocketnotes</h1>
+                <h1>Rocketmovies</h1>
             </Brand>
             <Input placeholder='Pesquisar pelo título'/>
             <Profile to="/login">
