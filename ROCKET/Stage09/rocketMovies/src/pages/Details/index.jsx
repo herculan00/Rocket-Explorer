@@ -2,9 +2,7 @@ import { Container} from "./styles"
 
 
 import { Header } from "../../components/Header"
-import { Section } from "../../components/Section"
 import { Tag } from "../../components/Tag"
-import { Input } from "../../components/Input"
 import {Link} from "react-router-dom"
 import {FiArrowLeft,FiClock} from "react-icons/fi"
 import stars from "../../assets/stars.svg"
@@ -60,9 +58,6 @@ export function Details(){
             atrasando a partida. Ao voltarem para a Endurance, Cooper e Amelia descobrem que 23 anos 
             se passaram.
         </p>
-
-        
-
       </main>
     </Container>
   )

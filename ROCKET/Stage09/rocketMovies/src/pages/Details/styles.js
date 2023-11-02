@@ -96,14 +96,14 @@ export const Container = styled.div`
     ::-webkit-scrollbar-track {
         
         border-radius: 10px;
-        
+        margin-bottom: 310px;
     }
     
     /* Handle */
     ::-webkit-scrollbar-thumb {
         background: ${({theme}) => theme.COLORS.PINK};
         border-radius: 10px;
-    
+        
     }
 
     /* Handle on hover */
