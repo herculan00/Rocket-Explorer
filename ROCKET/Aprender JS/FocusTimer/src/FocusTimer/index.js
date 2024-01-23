@@ -8,5 +8,7 @@ export function start(minutes,seconds){
 
     timer.updateDisplay()
 
+    events.setMinutes()
+
     console.log(events.registerControls())
 }
