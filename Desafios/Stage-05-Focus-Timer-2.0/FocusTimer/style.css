@@ -14,7 +14,8 @@
     --controls-bg-color:hsl(var(--hue),0%,14%);
     --button-secondary:hsl(var(--hue),40%,98%);
     --card:hsl(var(--hue),9%,89%);
-    --button-tertiary:hsl(var(--hue),0%,0%)
+    --card-secondary:hsl(var(var(--hue),97%,31%));
+    --button-tertiary:hsl(var(--hue),0%,0%);
 }
 
 html.light{
@@ -126,4 +127,13 @@ html:not(.running) .ph-pause-circle,
 html:not(.running) .ph-stop-circle,
 html:not(.music-on) .ph-speaker-high{
     display: none;
+}
+
+.music2-on .ph-tree, .music2-on .ph-cloud-snow,.music2-on .ph-storefront,.music2-on .ph-flame{
+    color: var(--button-secondary);
+}
+
+.music2-on .card {
+    background: red;
+    color: blue;
 }
