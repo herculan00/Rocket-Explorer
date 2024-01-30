@@ -14,7 +14,7 @@
     --controls-bg-color:hsl(var(--hue),0%,14%);
     --button-secondary:hsl(var(--hue),40%,98%);
     --card:hsl(var(--hue),9%,89%);
-    --card-secondary:hsl(var(var(--hue),97%,31%));
+    --card-secondary:hsl(var(--hue),97%,31%);
     --button-tertiary:hsl(var(--hue),0%,0%);
 }
 
@@ -116,7 +116,13 @@ button{
 }
 
 .tertiary {
-    color: var(--button-tertiary);
+    color: var(--controls-bg-color);
+}
+
+.card button:hover{
+    color: var(--button-secondary);
+    background: var(--card-secondary);
+    border-radius: 2.4rem;
 }
 
 
@@ -129,11 +135,3 @@ html:not(.music-on) .ph-speaker-high{
     display: none;
 }
 
-.music2-on .ph-tree, .music2-on .ph-cloud-snow,.music2-on .ph-storefront,.music2-on .ph-flame{
-    color: var(--button-secondary);
-}
-
-.music2-on .card {
-    background: red;
-    color: blue;
-}
