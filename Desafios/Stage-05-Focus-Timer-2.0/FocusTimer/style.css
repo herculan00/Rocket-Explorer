@@ -87,7 +87,7 @@ body{
     margin-top: 1.6rem;
     padding: 2.2rem 4rem;
     gap: 1.6rem;
-    background-color: var(--controls-bg-color);
+    
     border-radius: 999rem;
 
 }
@@ -118,7 +118,7 @@ body{
 button{
     background-color: transparent;
     border: 0;
-    color: var(--primary-color);
+    color: var(--controls-bg-color);
     cursor: pointer;
     font-size: 6.4rem;
 }
@@ -141,7 +141,6 @@ button{
 .running .ph-play-circle,
 .running .ph-timer,
 .music-on .ph-speaker-none,
-html:not(.running) .ph-pause-circle,
 html:not(.running) .ph-stop-circle,
 html:not(.music-on) .ph-speaker-high{
     display: none;
