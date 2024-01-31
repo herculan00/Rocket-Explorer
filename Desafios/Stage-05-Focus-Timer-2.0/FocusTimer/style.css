@@ -116,6 +116,7 @@ button{
     color: var(--controls-bg-color);
 }
 
+
 .card button:hover{
     color: var(--button-secondary);
     background: var(--card-secondary);
@@ -128,4 +129,28 @@ button:hover{
     border-radius: 99%;
 }
 
+.running .ph-play-circle,
+html:not(.running) .ph-stop-circle
+{
+    color: var(--button-secondary);
+    background: var(--card-secondary);
+    border-radius: 99%;
+}
 
+.forest-on .ph-tree,
+.rain-on .ph-cloud-snow,
+.coffeeShop-on .ph-storefront,
+.firePlace-on .ph-flame
+{
+    color: var(--button-secondary);
+    background: var(--card-secondary);
+    border-radius: 2.4rem;
+}
+
+html:not(.forest-on) .ph-tree,
+html:not(.rain-on) .ph-cloud-snow,
+html:not(.coffeeShop-on) .ph-storefront,
+html:not(.firePlace-on) .ph-flame
+{
+    color: var(--controls-bg-color);
+}
