@@ -15,9 +15,18 @@ export function reset(){
     timer.updateDisplay()
 }
 
-export function set(){
-    el.minutes.setAttribute('contenteditable',true)
-    el.minutes.focus()
+export function plusMinutes(){
+    let timePlusMinutes=Number(el.minutes.textContent)+5
+
+    timer.updateDisplay(timePlusMinutes,0)
+    sounds.buttonPressAudio.play()
+
+}
+
+export function minusMinutes(){
+    let timePlusMinutes=Number(el.minutes.textContent)-5
+
+    timer.updateDisplay(timePlusMinutes,0)
     sounds.buttonPressAudio.play()
 
 }
