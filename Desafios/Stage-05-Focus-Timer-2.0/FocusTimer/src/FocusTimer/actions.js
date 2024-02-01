@@ -60,11 +60,11 @@ export function forest(){
     document.documentElement.classList.toggle('forest-on')
 
     if (state.isMute) {
-        sounds.forest.toggle()
+        sounds.forest.play()
         return
     }
 
-    sounds.forest.toggle()
+    sounds.forest.pause()
 }
 
 export function rain(){
