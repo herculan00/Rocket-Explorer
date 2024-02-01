@@ -2,6 +2,7 @@ import state from './state.js'
 import * as timer from './timer.js'
 import * as el from './elements.js'
 import * as sounds from './sounds.js'
+import * as utils from './utils.js'
 
 export function play(){
     state.isRunning = true
@@ -56,47 +57,19 @@ export function toggleMusic(){
 }
 
 export function forest(){
-    state.isMute = document.documentElement.classList.toggle('music-on')
-    document.documentElement.classList.toggle('forest-on')
-
-    if (state.isMute) {
-        sounds.forest.play()
-        return
-    }
-
-    sounds.forest.pause()
+    let isMusicOn = document.documentElement.classList.toggle('forest-on')
+    utils.toggleMusic("forest",isMusicOn)
 }
 
 export function rain(){
-    state.isMute = document.documentElement.classList.toggle('music-on')
-    document.documentElement.classList.toggle('rain-on')
-
-    if (state.isMute) {
-        sounds.rain.play()
-        return
-    }
-
-    sounds.rain.pause()
+    let isMusicOn = document.documentElement.classList.toggle('rain-on')
+    utils.toggleMusic("rain",isMusicOn)
 }
 export function coffeeShop(){
-    state.isMute = document.documentElement.classList.toggle('music-on')
-    document.documentElement.classList.toggle('coffeeShop-on')
-
-    if (state.isMute) {
-        sounds.coffeeShop.play()
-        return
-    }
-
-    sounds.coffeeShop.pause()
+    let isMusicOn = document.documentElement.classList.toggle('coffeeShop-on')
+    utils.toggleMusic("coffeeShop",isMusicOn)
 }
 export function firePlace(){
-    state.isMute = document.documentElement.classList.toggle('music-on')
-    document.documentElement.classList.toggle('firePlace-on')
-
-    if (state.isMute) {
-        sounds.firePlace.play()
-        return
-    }
-
-    sounds.firePlace.pause()
+    let isMusicOn  = document.documentElement.classList.toggle('firePlace-on')
+    utils.toggleMusic("firePlace",isMusicOn)
 }
